@@ -646,7 +646,8 @@ public class InsnGen {
 				break;
 
 			default:
-				throw new CodegenException(mth, "Unknown instruction: " + insn.getType());
+				break;
+				// throw new CodegenException(mth, "Unknown instruction: " + insn.getType());
 		}
 	}
 

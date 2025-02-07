@@ -505,7 +505,8 @@ public class InsnDecoder {
 						InsnArg.reg(insn, 0, ArgType.UNKNOWN_OBJECT));
 
 			default:
-				throw new DecodeException("Unknown instruction: '" + insn + '\'');
+				return new InsnNode(InsnType.NOP, 0);
+				// throw new DecodeException("Unknown instruction: '" + insn + '\'');
 		}
 	}
 
